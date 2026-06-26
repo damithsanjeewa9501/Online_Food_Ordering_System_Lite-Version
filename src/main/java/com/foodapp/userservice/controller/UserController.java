@@ -23,4 +23,10 @@ public class UserController {
     public List<User> getUsers() {
         return service.getAllUsers();
     }
+
+    @DeleteMapping
+    public String deleteAllUsers() {
+        service.deleteAllUsers();
+        return "All users deleted successfully";
+    }
 }
