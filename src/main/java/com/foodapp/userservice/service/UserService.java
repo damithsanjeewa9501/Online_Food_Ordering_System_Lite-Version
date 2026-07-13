@@ -20,4 +20,8 @@ public class UserService {
     public List<User> getAllUsers() {
         return repository.findAll();
     }
+
+    public void deleteAllUsers() {
+        repository.deleteAll();
+    }
 }
